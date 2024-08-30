@@ -1,0 +1,157 @@
+/*@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+/*
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/web/20220720151303im_/https://sites.pitt.edu/~paz17/EBGaramond12-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/web/20220720151303im_/https://sites.pitt.edu/~paz17/EBGaramond-Bold.ttf');
+      font-weight: bold;
+}
+*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@media (max-width: 750px){
+    .leftcolumn {
+        float: none;
+        display: block;
+        width: 100%;
+        align: center;
+    }
+    .photo{
+      width: 90%;
+      max-width: 200px;
+      height:auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .rightcolumn{
+      margin-left: 1cm/*auto*/;
+      margin-right: 1cm/*auto*/;
+      float:center;
+      width: 80%;
+      color: #00111a;
+      font-family: Garamond, 'EB Garamond', Georgia, serif;
+      font-size: 90%;
+      line-height: 200%;
+    }
+
+}
+
+
+@media (min-width:751px) {
+  .leftcolumn {
+    float: left;
+    width: 20%;
+    min-width: 240px;
+    align: right;
+    margin-left: 50px;
+  }
+   .photo{
+      max-width: 90%;
+      height:auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .midcolumn{
+    float: left;
+    width: 50px;
+  }
+  .rightcolumn{
+    margin-left: 50px;
+	  float:left;
+    width: 50%;
+    min-width: 300px;
+    color: #00111a;
+    font-family: Garamond, 'EB Garamond', Georgia, serif;
+    font-size: 90%;
+    /* line-height: 200%; */
+    overflow:hidden;
+    /* border: dashed;*/
+  }
+}
+
+.row{
+  width: 100%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  margin: 10px 10px 10px 0px;
+  color: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Garamond, 'EB Garamond', Georgia, serif;
+}
+
+/* Abstracts aren't inside a <p> */
+p{
+  font-size: 13pt;
+  line-height: 120%;
+}
+
+
+
+li{
+  font-size: 13pt;
+  line-height: 120%;
+}
+
+
+/*img.photo{
+  width: 240px;
+}*/
+/* Abstracts */
+div.abstract{
+  margin-left: 5%;
+  display:none;
+  line-height: 12pt;
+}
+
+a{
+  color:blue;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+/* unvisited link
+a:link {
+  color: blue;
+  text-decoration: none;
+} */
+
+/* visited link */
+ a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+  text-decoration: none;
+}
